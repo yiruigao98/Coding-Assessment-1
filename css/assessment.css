@@ -1,0 +1,41 @@
+img{
+    width: 120px; 
+    margin-bottom: 15px; 
+    /*Your code here*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+body{
+    background-image: url(../images/back-ground.jpeg);
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    padding: 30px; 
+    margin:5px; 
+    /* YOUR CODE HERE */
+    text-align: center;
+}
+ 
+#mystuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+@media all and (min-width: 850px){
+
+    #mystuff{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    div:nth-child(even) {
+        border: 1px solid black;
+    }
+    
+}
